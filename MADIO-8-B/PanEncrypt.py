@@ -34,7 +34,7 @@ class PanEncrypt:
 		self.password = password
 
 		f = open('0x01.txt', 'r')
-		self.plaintext = f.read()
+		self.plaintext = f.read().lower()
 		f.close()
 
 	def run(self):
